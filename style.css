@@ -1,0 +1,173 @@
+/*General CSS rules-START*/
+@import url ('https://fonts.googleapis.com/css?family=Open+Sans');
+* {
+box-sizing: border-box;
+margin: 0;
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+/*General CSS rules-END*/
+
+/*Header with navigation-START*/
+header>nav>a {
+	text-decoration: none;
+	font-family: 'Open sans', sans-serif;
+	color: black;
+	border: solid orange;
+	padding: 15px;
+}
+header>nav>a:hover {
+	background-color: #ccc;
+}
+header {
+	line-height: 50px;
+	border: solid;
+	padding: 20px;
+}
+header>nav ul {
+	margin: 0 auto;
+	padding: 0;
+	list-style-type: none;
+	float: right;
+}
+ul:before, ul:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+header>nav ul>li {
+	float: left;
+	border: solid orange;
+	margin: 0 10px;
+}
+header>nav ul>li>a {
+	padding: 0 20px;
+	display: block;
+	color: black;
+	text-decoration: none;
+	text-transform: lowercase;
+	font-family: 'Open sans', sans-serif;
+}
+header>nav ul>li>a:hover {
+	background-color: #ccc;
+}
+/*Header with navigation-END*/
+
+/*Hero-START*/
+.hero {
+	height: 100vh;
+	border: solid orange;
+	margin: 20px 20px;
+}
+.hero h2 {
+	font-family: 'Open sans', sans-serif;
+	text-align: center;
+	padding-top: 20px;
+	font-weight: 200;
+}
+/*Hero-END*/
+
+/*Gallery-START*/
+.row:before, .row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.gallery {
+	margin: 20px 20px;
+}
+.myImg {
+	float: left;
+	width: 30%;
+	margin-right: 5%;
+	height: 200px;
+	border: solid orange;
+}
+.myImg h4 {
+	font-family: 'Open sans', sans-serif;
+	text-align: center;
+	padding-top: 10px;
+	font-weight: 300;
+}
+.myImg:last-of-type {
+	margin-right: 0;
+}
+/*Gallery-END*/
+
+/*Map-section-START*/
+.mapBackground {
+	margin: 20px 20px;
+	height: auto;
+	border: solid orange;
+}
+/*.mapBackground h2 {
+	font-family: 'Open sans', sans-serif;
+	text-align: center;
+	padding-top: 20px;
+	font-weight: 200;
+}*/
+.mapBackground .container img {
+	width: 100%;
+	}
+/*Map-section-END*/
+
+/*Footer-START*/
+.myFooterBackground {
+	border: solid;
+	margin-bottom: 10px;
+}
+.myFooterContent h2 {
+	font-size: 1.2rem;
+	text-align: center;
+	font-family: 'Open sans', sans-serif;
+	font-weight: 200;
+	padding: 20px;
+}
+/*Footer-END*/
+
+/* RWD-code-START*/
+@media (max-width: 767px) {
+header>nav>a {
+	text-decoration: none;
+	font-family: 'Open sans', sans-serif;
+	color: black;
+	border: solid orange;
+	padding: 20px;
+	display: block;
+	text-align: center;
+}
+header>nav ul {
+	margin: auto;
+	padding: 0;
+	list-style-type: none;
+	float: none;
+	}
+header>nav ul>li {
+	float: none;
+	border: solid orange;
+	margin: auto;
+	}
+header>nav ul>li>a {
+	padding: 0 20px;
+	display: block;
+	color: black;
+	text-decoration: none;
+	text-transform: lowercase;
+	font-family: 'Open sans', sans-serif;
+	text-align: center;
+	}
+.myImg, .myImg:last-of-type {
+	float: none;
+	width: 100%;
+	margin: 30px auto;
+	height: 30vh;
+	border: solid orange;
+	}
+.mapBackground .container img {
+	width: 100%;
+	}
+
+};
+/* RWD-code-END*/
